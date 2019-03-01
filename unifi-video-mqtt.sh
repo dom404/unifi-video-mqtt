@@ -17,7 +17,9 @@ MQTT_TOPIC_BASE="camera/motion"
 # Camera Defs
 CAM1_NAME="LivingRoom"
 CAM1_ID="Fxxxxxxxx"
-# Add extra Cameras
+CAM2_NAME="Kitchen"
+CAM2_ID="F2xxxxxxx"
+# Add extra Cameras - Move all this to a config file which can be mapped to a volume
 
 # --------------------------------------------------------------------------------
 # Script starts here
