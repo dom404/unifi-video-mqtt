@@ -40,3 +40,12 @@ CAM1_NAME="camera_name"
 CAM1_ID="F0xxxxxxxxxx"
 ```
 
+
+
+Add to configuration.yaml 
+
+  - platform: mqtt
+    state_topic: "camera/motion/LivingRoom"
+    payload_on: "ON"
+    payload_off: "OFF"
+    name: "LivingRoom Motion"
