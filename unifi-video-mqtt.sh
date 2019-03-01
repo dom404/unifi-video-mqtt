@@ -2,7 +2,6 @@
 
 # Unifi Video Vars
 UNIFI_MOTION_LOG=/var/log/unifi-video/motion.log
-#UNIFI_MOTION_LOG=/Volumes/Container/unifi-video/logs/motion.log
 
 # MQTT Vars
 MQTT_SERVER="x.x.x.x"
@@ -38,7 +37,7 @@ else
   MQTT_ID_OPT=""
 fi
 
-# Check for version of log file, the format changed in Unifi Video 3.10
+# Check for version of log file, the format changed in Unifi Video 3.1x+
 VER_TEST=`tail -1 $UNIFI_MOTION_LOG | awk {'print $6'} | cut -d '[' -f 1`
 
 # This bit needs a re-write - should put a compare in to see if a match happens if multiple cameras are 
