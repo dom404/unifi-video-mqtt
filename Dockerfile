@@ -1,15 +1,18 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
-MAINTAINER Zachary McGibbon
+MAINTAINER Me
 
 # Update package cache
-RUN apk update
+RUN apt-get update -y
 
 # Install required packages
-RUN apk add \
+RUN apt-get install \
+        apt-utils \
+        net-tools \
         bash \
         inotify-tools \
-        mosquitto-clients
+        mosquitto-clients \
+        -y
 
 # Get script and move to the right place
 COPY ./unifi-video-mqtt.sh /usr/local/bin
@@ -22,3 +25,4 @@ RUN mkdir -p /var/log/unifi-video
 
 # Start log monitoring
 ENTRYPOINT ["/usr/local/bin/unifi-video-mqtt.sh"]
+
