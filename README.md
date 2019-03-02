@@ -18,8 +18,9 @@ docker build . -t unifi-video-mqtt
 
 run
 
+```
 docker run -d --net=host --name unifi-video-mqtt --restart always -v /pathtounifi-video/logs:/var/log/unifi-video unifi-video-mqtt:latest
-
+```
 
 # IMPORTANT!!!
 Before starting the service, make sure to edit */usr/local/bin/unifi-video-mqtt.sh* with your specific
