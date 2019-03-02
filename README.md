@@ -12,8 +12,9 @@ This can be useful for systems like Homeassistant that are lacking motion detect
 
 Build the Docker Image
 
+```
 docker build . -t unifi-video-mqtt
-
+```
 
 run
 
