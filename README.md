@@ -46,7 +46,5 @@ Add to configuration.yaml
 ```
   - platform: mqtt
     state_topic: "camera/motion/camera_name"
-    payload_on: "ON"
-    payload_off: "OFF"
     name: "camera_name"
 ```
